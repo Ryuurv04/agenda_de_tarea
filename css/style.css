@@ -1,0 +1,73 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#3C4BB0,#8A99FF,#6F82FC,#8701B3);
+    background-size: 400% 400%;
+    height: 100%;
+    animation: animate 15s ease infinite;
+    
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.contenedor{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+.formulario{
+    display: block;
+}
+.formulario input{
+
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    height: 30px;
+}
+.formulario button{
+    border: none;
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: 1s;
+}
+.formulario button:hover{
+    background-color: orange;
+    width: 300px;
+    height: 50px;
+    transition: 1s;
+}
+.carta{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 5px;
+}
+.carta .anotado{
+    text-decoration: line-through;
+    color: green;
+}
+.icons .btn-icon{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
